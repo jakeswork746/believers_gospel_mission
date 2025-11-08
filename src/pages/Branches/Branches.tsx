@@ -44,7 +44,19 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 export const Branches: React.FC = () => {
   const [activeState, setActiveState] = useState("Abuja");
 
-  const branches = {
+   type Branch = {
+    id: number;
+    name: string;
+    address: string;
+    pastor_img: string;
+    contact?: string;
+  };
+
+  type BranchesRecord = Record<string, Branch[]>;
+
+ 
+
+  const branches: BranchesRecord = {
     Abuja: [
       {
         id: 1,
@@ -405,7 +417,7 @@ export const Branches: React.FC = () => {
             >
               <img
                 src={branch.pastor_img}
-                alt={branch.pastor}
+                alt={branch.name}
                 className="h-[350px] w-full rounded-xl object-cover"
               />
               <div className="p-6 pl-0 text-left">

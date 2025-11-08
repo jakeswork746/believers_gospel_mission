@@ -15,7 +15,7 @@ const About_into: React.FC = () => {
 
       {/* Text Section */}
       <div className="flex-1 min-w-[300px] max-w-[560px] text-white p-8 lg:p-10 flex flex-col justify-center  ">
-        <h2 className="text-2xl lg:text-3xl font-bold mb-6 text-[#050505]">
+        <h2 className="text-xl lg:text-3xl font-bold mb-6 text-[#050505]">
           About Believers Gospel Mission(BGM)
         </h2>
 

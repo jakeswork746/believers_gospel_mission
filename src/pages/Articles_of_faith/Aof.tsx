@@ -10,7 +10,7 @@ export const Aof: React.FC = () => {
         title="ARTICLE OF FAITH"
         hero_banner={hero_banner}
         description="Our foundation is built on biblical truth — these are the doctrines and beliefs that guide our faith, practice, and daily walk with God."
-        className="h-[80vh]"
+        className="h-[90vh]"
       />
       <Article_content /> 
     </>

@@ -72,7 +72,7 @@ export const Event: React.FC = () => {
         title="UPCOMING EVENTS"
         hero_banner={hero_banner}
         description="Stay informed about our upcoming programs and gatherings that strengthen faith and build fellowship."
-        className="h-[80vh]"
+        className="h-[85vh]"
       />
 
       <section className="py-20 bg-white sm:py-24 lg:py-32">

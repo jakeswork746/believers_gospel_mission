@@ -47,7 +47,7 @@ export const About: React.FC = () => {
         title="ABOUT BELIEVERS GOSPEL MISSION"
         description="Believers Gospel Mission is a Christ-centered ministry dedicated to preaching the Gospel, making disciples, and equipping believers to fulfill God’s purpose for their lives. For over four decades, we’ve been reaching villages, cities, and nations — transforming lives through the power of God’s Word and the Holy Spirit."
         hero_banner={hero_banner}
-        className="h-[80vh] pt-4em"
+        className="h-[110vh] lg:pt-4 pt-[12em]  bg-cover"
       />
 
       {/* Content Sections */}

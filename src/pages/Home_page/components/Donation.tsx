@@ -42,7 +42,7 @@ const Donation_involvement_section: React.FC = () => {
       >
         <div className="max-w-md relative z-10">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-            Join the <span className="text-[#e41e26]">Mission</span>
+            Join the <span className="text-[#050505]">Mission</span>
           </h2>
           <p className="text-gray-200 leading-relaxed mb-8 text-lg italic">
             Together, we can reach more souls and transform more lives through Christ’s love.

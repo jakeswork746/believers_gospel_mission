@@ -61,8 +61,8 @@ export const Explore_ministry:React.FC = () => {
   return (
     <section className="py-20 ">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tex">Explore Our Ministries</h2>
-          <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+          <h2 className="text-2xl font-bold tex">Explore Our Ministries</h2>
+          <p className="text-black/70 mt-3 max-w-2xl mx-auto px-6">
             Each ministry is a vital part of our mission — serving different groups, nurturing gifts, and expanding the Kingdom of God.
           </p>
         </div>

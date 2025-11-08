@@ -28,14 +28,14 @@ const NextStepsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 text-center px-6 lg:px-20 bg-white">
+    <section className="py-20 text-center px-3 lg:px-20 bg-white">
       {/* Title */}
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-3xl md:text-5xl font-bold mb-12 text-[#fff] bg-[#050505] p-2"
+        className="text-2xl md:text-5xl font-bold mb-12 text-[#fff] bg-[#050505] p-2"
       >
         Next Steps
       </motion.h2>

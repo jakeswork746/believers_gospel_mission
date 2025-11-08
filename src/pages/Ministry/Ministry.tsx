@@ -13,7 +13,7 @@ export const Ministry: React.FC = () => {
         title="OUR MINISTRIES"
         hero_banner={hero_banner}
         description="Our ministries are dedicated to nurturing the spiritual growth of all members and reaching the world with the message of Christ."
-        className="h-[80vh] bg-center bg-cover flex items-center "
+        className="h-[85vh] bg-center bg-cover flex items-center pt-[10em] lg:pt-4"
       />
 
    <Explore_ministry />

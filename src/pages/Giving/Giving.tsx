@@ -11,7 +11,7 @@ export const Giving:React.FC = () => {
         title="Thank you for giving"
         description="The generous will prosper; those who refresh others will themselves be refreshed.”"
         hero_banner={hero_banner}
-        className="h-[80vh] py-12"
+        className="h-[85vh] py-12"
       />
     </section>
 

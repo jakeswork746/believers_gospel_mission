@@ -36,7 +36,7 @@ const ministries: Ministry[] = [
 const Ministries_section: React.FC = () => {
   return (
     <section
-      className="py-20 bg-cover bg-center text-center relative my-16 mx-6 rounded-2xl px-4 overflow-hidden"
+      className="py-20 bg-cover bg-center text-center relative my-16 lg:mx-6 mx-2 rounded-2xl px-4 overflow-hidden"
       style={{
         background: `linear-gradient(rgba(0,0,0,0.25), black), url(${ministries_banner})`,
         backgroundAttachment: "fixed",
@@ -51,7 +51,7 @@ const Ministries_section: React.FC = () => {
       <div className="relative z-10">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white tracking-wide">
+          <h2 className="text-2xl md:text-5xl font-bold mb-6 text-white tracking-wide">
             Our Ministries
           </h2>
           <p className="text-white/90 max-w-2xl mx-auto text-lg leading-relaxed">
@@ -61,7 +61,7 @@ const Ministries_section: React.FC = () => {
         </div>
 
         {/* Ministries Cards */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 px-5 lg:px-[105px]">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 px-2 lg:px-[105px]">
           {ministries.map((ministry) => (
             <div
               key={ministry.id}
@@ -70,7 +70,7 @@ const Ministries_section: React.FC = () => {
               className="bg-white/10 backdrop-blur-md border border-white/20 text-white shadow-lg rounded-2xl p-8 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300"
             >
               {ministry.icon}
-              <h3 className="text-2xl font-semibold mb-3">{ministry.title}</h3>
+              <h3 className="text-xl lg:text-2xl font-semibold mb-3">{ministry.title}</h3>
               <p className="text-white/80 text-sm leading-relaxed">
                 {ministry.description}
               </p>

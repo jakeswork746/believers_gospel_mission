@@ -63,7 +63,7 @@ const Wrapper: React.FC = () => {
       }}
     >
             <div className="relative max-w-7xl mx-auto px-6 text-white">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">
+        <h2 className="text-2xl lg:text-4xl font-bold mb-12">
           Our Mission — Preach, Disciple, Equip & Reach Out
         </h2>
 

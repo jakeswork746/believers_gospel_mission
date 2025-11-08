@@ -193,14 +193,14 @@ export const Leadership: React.FC = () => {
             <img
               src={bishop_david}
               alt="Bishop David Nwachukwu"
-              className="w-full h-[500px] object-cover transition-transform duration-500 hover:scale-105"
+              className="w-full lg:h-[500px] lg:object-cover transition-transform duration-500 hover:scale-105"
             />
           </div>
           <div data-aos="fade-left" className="lg:w-[55%] text-center lg:text-left">
-            <h2 className="text-4xl font-bold text-gray-900 mb-3">
+            <h2 className="lg:text-4xl text-xl font-bold text-[#050505] mb-3">
               Bishop David Nwachukwu
             </h2>
-            <h4 className="text-lg font-medium text-red-700 mb-5">
+            <h4 className="text-[16px] font-medium text-[#e41e26]  mb-5">
               Presiding Bishop of Believers Gospel Mission Int.
             </h4>
             <p className="text-gray-700 leading-relaxed text-lg">

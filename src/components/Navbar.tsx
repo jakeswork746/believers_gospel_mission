@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 
 const Header: React.FC = () => {
-  const [openDropdown, setOpenDropdown] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<number | false>(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
@@ -28,25 +28,25 @@ const Header: React.FC = () => {
 
   return (
     <div className="fixed w-full z-[999] top-0">
-      <header className="bg-[#050505]/80 backdrop-blur-md shadow px-4">
-        <div className="max-w-8xl mx-auto flex justify-between items-center px-4 py-2">
+      <header className="bg-[#050505]/80 backdrop-blur-md shadow px-3 sm:px-6 lg:px-10">
+        <div className="max-w-7xl mx-auto flex justify-between items-center py-3 md:py-2">
           {/* Logo */}
           <NavLink
             to="/"
-            className="flex items-center bg-[#050505]/60 backdrop-blur-md shadow px-4 gap-2"
+            className="flex items-center gap-3 bg-[#050505]/60 backdrop-blur-md px-3 py-1 rounded-md"
           >
             <img
               src={logo}
               alt="Church Logo"
-              className="w-16 lg:w-20 h-16 lg:h-20 object-cover"
+              className="w-14 h-14 lg:w-16 lg:h-16 object-cover rounded-md"
             />
-            <span className="uppercase text-2xl lg:text-4xl font-extrabold mb-1 leading-tight text-white">
+            <span className="uppercase text-2xl lg:text-3xl font-extrabold leading-tight text-white">
               BGM
             </span>
           </NavLink>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex gap-6 items-center relative">
+          <nav className="hidden md:flex items-center gap-8 lg:gap-10">
             {navLinks.map((item) =>
               item.dropdown ? (
                 <div key={item.id} className="relative">
@@ -97,7 +97,7 @@ const Header: React.FC = () => {
             {/* CTA */}
             <Link
               to="/giving"
-              className="ml-4 giving-btn bg-[#e41e26] text-white px-4 py-2 font-semibold transition hover:bg-[#c91a20]"
+              className="ml-4 bg-[#e41e26] text-white px-5 py-2 rounded-md font-semibold transition hover:bg-[#c91a20]"
             >
               Give Online
             </Link>
@@ -115,7 +115,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-[#050505] backdrop-blur-lg p-5 space-y-4 border-t border-[#e41e26]/40">
+        <div className="md:hidden bg-[#050505]/95 backdrop-blur-lg p-5 space-y-4 border-t border-[#e41e26]/40">
           {navLinks.map((item) =>
             item.dropdown ? (
               <div key={item.id}>
@@ -178,7 +178,6 @@ const Header: React.FC = () => {
         </div>
       )}
     </div>
-    
   );
 };
 

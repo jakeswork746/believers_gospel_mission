@@ -76,7 +76,7 @@ export const History: React.FC = () => {
         title="Our History"
         description="Believers Gospel Mission started as an evangelistic movement whose root was from the Scripture Union. After the Nigerian Civil War that ended on 12th January, 1970, some Christians began spreading the gospel in the then Old Etiti, Imo State — sparking a revival that birthed this great ministry."
         hero_banner={hero_banner}
-        className="h-[80vh] py-12"
+        className="h-[90vh] pt-[9em]"
       />
 
       {/* History Sections */}
@@ -94,7 +94,7 @@ export const History: React.FC = () => {
           <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
 
           <div className="relative max-w-6xl mx-auto text-white text-center space-y-8">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-3">
+            <h2 className="text-2xl lg:text-4xl font-semibold mb-3">
               {section.title}
             </h2>
             {section.subtitle && (

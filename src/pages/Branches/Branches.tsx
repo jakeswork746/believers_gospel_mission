@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import kennith from "../../assets/kenneth.jpg";
-import rev_steve from "../../assets/Rev_steve.png";
+// import rev_steve from "../../assets/Rev_steve.png";
 // import rev_uzoma from "../../assets/Rev_uzoma.png";
-import rev_linus from "../../assets/rev_linus.jpg";
+// import rev_linus from "../../assets/rev_linus.jpg";
 import rev_miracle from "../../assets/rev_miracle.jpg";
 import rev_ugochukwu from "../../assets/ugochukwu.jpg";
 import rev_emeka from "../../assets/REV_EMEKA_BLESSIUS.jpg";
@@ -17,13 +17,13 @@ import rev_harmony from "../../assets/pastor_harmony.png";
 import rev_evang from "../../assets/rev_evang.jpg";
 import pst_obeni from "../../assets/pst_obeni.jpg";
 import pst_nnamdi from "../../assets/pst_nnamdi.jpg";
-import pst_eric from "../../assets/pst_eric.jpg";
+// import pst_eric from "../../assets/pst_eric.jpg";
 import rev_uzoma from "../../assets/Rev_uzoma.png";
 import rev_ekeoma from "../../assets/rev_ekeoma.jpg";
 import rev_remmy from "../../assets/rev_remmy.png";
 import rev_friday from "../../assets/Rev_friday.png";
 import rev_okafor from "../../assets/rev_okafor.jpg";
-import ehirim from "../../assets/ehirim.jpg";
+// import ehirim from "../../assets/ehirim.jpg";
 import rev_okele from "../../assets/okele.jpg";
 import pst_umu from "../../assets/past_umu.jpg";
 import rev_ibe from "../../assets/rev_ibe.jpg";
@@ -44,7 +44,19 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 export const Branches: React.FC = () => {
   const [activeState, setActiveState] = useState("Abuja");
 
-  const branches = {
+   type Branch = {
+    id: number;
+    name: string;
+    address: string;
+    pastor_img: string;
+    contact?: string;
+  };
+
+  type BranchesRecord = Record<string, Branch[]>;
+
+ 
+
+  const branches: BranchesRecord = {
     Abuja: [
       {
         id: 1,
@@ -405,7 +417,7 @@ export const Branches: React.FC = () => {
             >
               <img
                 src={branch.pastor_img}
-                alt={branch.pastor}
+                alt={branch.name}
                 className="h-[350px] w-full rounded-xl object-cover"
               />
               <div className="p-6 pl-0 text-left">

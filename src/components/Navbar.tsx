@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 
 const Header: React.FC = () => {
-  const [openDropdown, setOpenDropdown] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<number | false>(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [

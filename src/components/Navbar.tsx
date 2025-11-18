@@ -39,7 +39,7 @@ const Header: React.FC = () => {
             <img
               src={logo}
               alt="Church Logo"
-              className="w-20 h-20 lg:w-16 lg:h-16 object-cover rounded-md"
+              className="w-30 h-30 lg:w-16 lg:h-16 object-cover rounded-md"
             />
             <span className="uppercase text-2xl lg:text-3xl font-extrabold leading-tight text-white">
               BGM

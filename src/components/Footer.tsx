@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
             </li>
             <li className="flex items-center gap-3">
               <FaPhone className="text-[#e41e26]" />
-              <a href="tel:+2341234567890" className="hover:text-white transition">
+              <a href="tel:+2348132886344" className="hover:text-white transition">
                 08132886344
               </a>
             </li>

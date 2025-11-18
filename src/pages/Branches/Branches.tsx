@@ -376,7 +376,7 @@ export const Branches: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="lg:h-[100vh] h-[80vh] bg-black flex flex-col justify-center items-center text-white px-4 text-center gap-6 pt-14">
+      <section className="lg:h-[100vh] h-[80vh] bg-black flex flex-col justify-center items-center text-white px-4 text-center gap-6 pt-20">
         <h1 className="text-2xl lg:text-6xl font-bold uppercase max-w-5xl leading-snug">
           “We enlist, disciple, and deploy believers in Christ, and with joy.”
         </h1>
@@ -418,7 +418,7 @@ export const Branches: React.FC = () => {
               <img
                 src={branch.pastor_img}
                 alt={branch.name}
-                className="h-[390px] w-full rounded-xl object-cover object-top"
+                className="h-[400px] w-full rounded-xl object-cover object-top"
               />
               <div className="p-6 pl-0 text-left">
                 <h3 className="text-xl font-medium text-[#050505] mb-1">

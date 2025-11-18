@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Hero_section_component } from "../../components/Hero_section_component";
-import hero_banner from "../../assets/upcoming-event.jpg"
-import event1 from "../../assets/upcoming-event.jpg";
+import hero_banner from "../../assets/upcoming_event.jpg"
+import event1 from "../../assets/upcoming_event.jpg";
 import event2 from "../../assets/upcoming-event.jpg";
 import event3 from "../../assets/upcoming-event.jpg";
 import event4 from "../../assets/upcoming-event.jpg";
@@ -12,11 +12,11 @@ export const Event: React.FC = () => {
   const events = [
     {
       id: 1,
-      title: "Annual Believers Convention",
-      date: "December 5th - 8th, 2025",
-      location: "BGM Headquarters, Port Harcourt, Nigeria",
+      title: "GILGAL 2025",
+      date: "3rd Dec, 2025 & 4th - 7th Dec, 2025.",
+      location: "National Headquarters, Believers Gospel Mission Inc, Along Lowa Road, Isinweke, Ihitte-Uboma, Imo State. Nigeria.",
       description:
-        "Our yearly gathering of believers across the globe to worship, pray, and receive the Word with power. Experience divine transformation and fellowship like never before!",
+        "GILGAL 2025 is the annual gathering of Believers Gospel Mission Inc, themed “Victory in the Blood of Jesus.” The event features a Minister’s Conference on 3rd December 2025 and the General Convention from 4th–7th December 2025. It will be a time of worship, the Word, and divine impartation, featuring anointed ministers and guest artists. Holding at the National Headquarters, Isinweke, Ihitte-Uboma, Imo State, this convention promises spiritual renewal, breakthrough, and life-changing encounters.",
       img: event1,
     },
     {
@@ -119,7 +119,7 @@ export const Event: React.FC = () => {
 
       {/* Modal Section */}
       {selectedEvent && (
-        <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4">
+        <div className="fixed z-999 inset-0 bg-black bg-opacity-60 flex items-center justify-center   p-4">
           <div className="bg-white rounded-2xl max-w-lg w-full p-8 relative shadow-xl">
             <button
               onClick={() => setSelectedEvent(null)}

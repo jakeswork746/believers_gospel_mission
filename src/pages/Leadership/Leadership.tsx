@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import { Hero_section_component } from "../../components/Hero_section_component";
 
 import hero_banner from "../../assets/contact_hero.jpg";
@@ -233,7 +234,7 @@ export const Leadership: React.FC = () => {
               <img
                 src={leader.img}
                 alt={leader.name}
-                className="h-[400px] w-full object-cover object-center"
+                className="h-[450px] w-full object-cover object-top"
               />
               <div className="p-6 text-center">
                 <h3 className="text-xl font-semibold text-gray-800">
@@ -256,7 +257,7 @@ export const Leadership: React.FC = () => {
             <img
               src={rev_victor_adams}
               alt="Rev Victor Adams"
-              className="w-full h-[450px] object-cover rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105"
+              className="w-full h-[450px] object-cover object-top rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105"
             />
           </div>
           <div data-aos="fade-left" className="lg:w-[55%] text-center lg:text-left">
@@ -293,7 +294,7 @@ export const Leadership: React.FC = () => {
                 <img
                   src={leader.img}
                   alt={leader.name}
-                  className="h-[380px] w-full object-cover"
+                  className="h-[380px] w-full object-cover object-top"
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-800">
@@ -318,7 +319,7 @@ export const Leadership: React.FC = () => {
             <img
               src={rev_ifeanyi}
               alt="Rev Ifeanyi Ndukwe"
-              className="w-full h-[450px] object-cover rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105"
+              className="w-full h-[450px] object-cover object-top rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105"
             />
           </div>
           <div data-aos="fade-left" className="lg:w-[55%] text-center lg:text-left">
@@ -356,7 +357,7 @@ export const Leadership: React.FC = () => {
                   <img
                     src={leader.img}
                     alt={leader.name}
-                    className="h-[400px] w-full object-cover"
+                    className="h-[400px] w-full object-cover object-top"
                   />
                   <div className="p-6 text-center">
                     <h3 className="text-xl font-semibold text-gray-800">
@@ -371,6 +372,9 @@ export const Leadership: React.FC = () => {
             </div>
           </div>
         ))}
+       <div className="text-center">
+         <Link to='/branches' className="text-center mx-auto underline">Visit Our Branches</Link>
+       </div>
       </section>
     </>
   );

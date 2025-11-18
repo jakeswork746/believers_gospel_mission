@@ -15,7 +15,7 @@ export const Hero_section_component :React.FC <hero_section> = ({hero_banner, ti
   return (
    <section
   className={`relative bg-center bg-cover flex items-end justify-start text-white ${className}`}
-  style={{ backgroundImage: `url(${hero_banner})` }}
+  style={{ backgroundImage: `url(${hero_banner})`, backgroundPosition: 'center', backgroundSize: 'cover' }}
 >
   <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black"></div>
 

@@ -15,14 +15,14 @@ const Header: React.FC = () => {
       dropdown: [
         { id: 1, link_text: "About Us", url: "/about" },
         { id: 2, link_text: "History", url: "/history" },
+        { id: 3, link_text: "Article Of Faith", url: "/aof" },
+        { id: 4, link_text: "Branches", url: "/branches" },
       ],
     },
     { id: 3, text: "Ministries", url: "/ministry" },
     { id: 4, text: "Sermons", url: "/sermons" },
     { id: 5, text: "Events", url: "/events" },
-    { id: 6, text: "Branches", url: "/branches" },
-    { id: 7, text: "Article Of Faith", url: "/aof" },
-    { id: 8, text: "Leadership", url: "/leadership" },
+    { id: 7, text: "Leadership", url: "/leadership" },
     { id: 9, text: "Contact", url: "/contact" },
   ];
 
@@ -30,6 +30,7 @@ const Header: React.FC = () => {
     <div className="fixed w-full z-[999] top-0">
       <header className="bg-[#050505]/80 backdrop-blur-md shadow px-3 sm:px-6 lg:px-10">
         <div className="max-w-7xl mx-auto flex justify-between items-center py-3 md:py-2">
+          
           {/* Logo */}
           <NavLink
             to="/"
@@ -38,7 +39,7 @@ const Header: React.FC = () => {
             <img
               src={logo}
               alt="Church Logo"
-              className="w-14 h-14 lg:w-16 lg:h-16 object-cover rounded-md"
+              className="w-20 h-20 lg:w-16 lg:h-16 object-cover rounded-md"
             />
             <span className="uppercase text-2xl lg:text-3xl font-extrabold leading-tight text-white">
               BGM
@@ -46,7 +47,7 @@ const Header: React.FC = () => {
           </NavLink>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex items-center gap-8 lg:gap-10">
+          <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((item) =>
               item.dropdown ? (
                 <div key={item.id} className="relative">
@@ -61,16 +62,17 @@ const Header: React.FC = () => {
                   </button>
 
                   {openDropdown === item.id && (
-                    <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg w-44 py-2 z-50">
+                    <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg w-48 py-4 h-auto z-[999]">
                       {item.dropdown.map((drop) => (
                         <NavLink
                           key={drop.id}
                           to={drop.url}
                           className={({ isActive }) =>
-                            `block px-4 py-2 text-[#050505] hover:bg-[#e41e26]/10 transition ${
+                            `block px-4 py-1 text-[#050505] hover:bg-[#e41e26]/10 transition ${
                               isActive ? "text-[#e41e26] font-semibold" : ""
                             }`
                           }
+                          style={{color: '#050505', fontSize: '14px' }}
                           onClick={() => setOpenDropdown(false)}
                         >
                           {drop.link_text}
@@ -97,7 +99,7 @@ const Header: React.FC = () => {
             {/* CTA */}
             <Link
               to="/giving"
-              className="ml-4 bg-[#e41e26] text-white px-5 py-2 rounded-md font-semibold transition hover:bg-[#c91a20]"
+              className="ml-4 bg-[#e41e26] text-white px-5 text-[14px] py-2 rounded-md font-semibold transition hover:bg-[#c91a20]"
             >
               Give Online
             </Link>
@@ -134,7 +136,7 @@ const Header: React.FC = () => {
                 </button>
 
                 {openDropdown === item.id && (
-                  <div className="mt-2 pl-4 space-y-2">
+                  <div className="mt-2 pl-4 space-y-2  ">
                     {item.dropdown.map((drop) => (
                       <NavLink
                         key={drop.id}
@@ -171,6 +173,7 @@ const Header: React.FC = () => {
           <Link
             to="/giving"
             className="block w-full bg-[#e41e26] text-center text-white py-2 rounded-md font-semibold hover:bg-[#c91a20] transition"
+            style={{fontSize: '14px'}}
             onClick={() => setIsMenuOpen(false)}
           >
             Give Online

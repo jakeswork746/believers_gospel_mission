@@ -3,6 +3,7 @@ import { Hero_section_component } from "../../components/Hero_section_component"
 import hero_banner from "../../assets/hero_banner.jpg";
 import persons_img1 from "../../assets/rev_amos.png";
 import history_banner from "../../assets/envangelism.jpg";
+import  bishop_Img from '../../assets/bishop_picture.jpg'
 
 interface HistorySection {
   id: number;
@@ -62,6 +63,7 @@ export const History: React.FC = () => {
       ],
       persons: [
         {
+          image: bishop_Img,
           name: "Rev. Dr. David Nwachukwu",
           title: "General Overseer, Believers Gospel Mission",
         },
@@ -120,7 +122,7 @@ export const History: React.FC = () => {
                         <img
                         src={person.image}
                         alt={person.name}
-                        className="w-40 h-40 object-cover mx-auto rounded-full mb-4 border-2 border-white/30"
+                        className="w-50 h-50 object-cover mx-auto rounded-full mb-4 border-2 border-white/30"
                       />
                     </div>
                     ) : (

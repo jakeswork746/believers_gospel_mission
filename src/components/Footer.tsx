@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
             <li className="flex items-center gap-3">
               <FaPhone className="text-[#e41e26]" />
               <a href="tel:+2341234567890" className="hover:text-white transition">
-                +234 123 456 7890
+                08132886344
               </a>
             </li>
           </ul>
@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
 
           <div className="flex items-center gap-4">
             <a
-              href="https://facebook.com/yourpage"
+              href="https://www.facebook.com/share/19vCuTpwuj/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Believers Gospel Mission on Facebook"
@@ -122,7 +122,7 @@ const Footer: React.FC = () => {
             </a>
 
             <a
-              href="https://youtube.com/yourchannel"
+              href="https://youtube.com/@bgm-hq?si=AyN_Wd3cSKeMSkxz"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Believers Gospel Mission on YouTube"
